@@ -19,10 +19,65 @@
           </ul>
         </nav>
         <div class="header-text">
-            <p>Web Developer</p>
-            <h1>Hi, I'm <span>Ranjan </span>Kumar Pandit<br> From India</h1>
+          <p>Web Developer</p>
+          <h1>
+            Hi, I'm <span>Ranjan </span>Kumar Pandit<br />
+            From India
+          </h1>
         </div>
       </div>
     </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="images/user.jpeg" alt="User Image" />
+          </div>
+          <div class="about-col2"><h1 class="sub-tittle">About Me</h1>
+        <p>Hello there! 👋 I'm <span>Ranjan</span> Kumar Pandit, a passionate and creative student pursuing a career in web development. I thrive on turning ideas into interactive and user-friendly websites.</p>
+
+        <div class="tab-tittle">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-content active-tab" id="skills">
+            <ul>
+                <li><span>Web Development</span><br>Web App development</li>
+                <li><span>C++</span><br> Development in C++</li>
+            </ul>
+        </div>
+        <div class="tab-content" id="experience">
+            <ul>
+                <li>No Experience</li>
+            </ul>
+        </div>
+        <div class="tab-content" id="education">
+            <ul>
+                <li><span>Web Development</span><br>Web App development</li>
+                <li><span>C++</span><br> Development in C++</li>
+            </ul>
+        </div>
+    </div>
+        </div>
+      </div>
+    </div>
+    <script>
+
+        var tabLinks=document.getElementsByClassName("tab-links")
+        var tabContent=document.getElementsByClassName("tab-content")
+
+        function opentab(tabname){
+            for(tablink of tabLinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabContent){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
   </body>
 </html>
