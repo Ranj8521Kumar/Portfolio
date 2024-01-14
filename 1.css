@@ -1,0 +1,32 @@
+/* *{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.container{
+    font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  width: 350px;
+  height: 200px;
+  outline: dashed 1px black;
+  /* Setup */
+  /* background-color: red;
+} */
+
+/* @media screen and(min-width:400px){
+    body div{
+        width: 200px;
+        height: 100px;
+        background-color: aqua;
+    }
+} */
+
+/* @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+   */ 
