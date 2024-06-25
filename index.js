@@ -51,5 +51,9 @@ function moveSlide(direction) {
     const totalSlides = slides.length;
     currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
     const sliderContainer = document.querySelector('.work-list');
-    sliderContainer.style.transform = `translateX(-${currentSlide * 20}%)`;
+    sliderContainer.style.transform = `translateX(-${currentSlide * 25}%)`;
 }
+
+
+document.querySelector('.prev').addEventListener('click', () => moveSlide(-1));
+document.querySelector('.next').addEventListener('click', () => moveSlide(1));
