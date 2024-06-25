@@ -425,3 +425,48 @@ nav .small-screen{
         font-size: 20px;
     }
 }
+
+
+
+
+/* Slider Specific CSS */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.work-list {
+    display: flex;
+    justify-content: space-evenly;
+    transition: transform 0.5s ease-in-out;
+}
+
+.work {
+    min-width: 30%;
+    box-sizing: border-box;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

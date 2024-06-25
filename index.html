@@ -23,7 +23,7 @@
           <i class="fa-solid fa-bars small-screen" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>Web Developer</p>
+          <p>Web Developer||Competitive Programer||DSA</p>
           <h1>
             Hi, I'm <span>Ranjan </span>Kumar Pandit<br />
             From India
@@ -75,7 +75,9 @@
 
     <div id="portfolio">
         <div class="container">
-                <h1 class="sub-tittle">My Work</h1>
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="slider-container">
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
                 <div class="work-list">
                     <div class="work">
                         <img src="images/billing-system.jpeg" alt="Billing-System">
@@ -86,12 +88,12 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="images/veichle.jpg" alt="Veichle">
+                        <img src="images/restaurant.jpeg" alt="Restaurant">
                         <div class="layer">
-                            <h3>e-Veichle System</h3>
-                            <p>The C++ program to be a basic console-based application for
-                                managing vehicles, users, and trips.</p>
-                            <a href="https://github.com/Ranj8521Kumar/e-Vehicle-System"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <h3>Digital Dining Restaurant Website</h3>
+                            <p>This is a Functional Restaurant Website using HTML, CSS, JavaScript,
+                                EJS, NodeJs, ExpressJs, MongoDB.</p>
+                            <a href="https://github.com/Ranj8521Kumar/Digital-Dining-Restaurant-WithBackend.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
                     <div class="work">
@@ -118,7 +120,7 @@
                             <a href="https://ranj8521kumar.github.io/Cricket-Project/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>
-                  <div class="work">
+                    <div class="work">
                         <img src="images/myntra.jpeg" alt="Cricket-Game">
                         <div class="layer">
                             <h3>Myntra Clone</h3>
@@ -127,11 +129,16 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn">See More</a>
-
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
             </div>
         </div>
     </div>
+
+    
+
+
+
+
 
     <div id="contact">
         <div class="container">
@@ -149,9 +156,7 @@
                     </div>
 
                     <a href="RESUME.pdf" download class="btn btn2">Download CV</a>
-=======
-                    <a href="My Resume1.pdf" download class="btn btn2">Download CV</a>
->>>>>>> 9add7aaf44cc7128f6d51ddac2a3904c9c7e42ef
+
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">

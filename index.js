@@ -40,3 +40,16 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+
+
+
+
+let currentSlide = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.work');
+    const totalSlides = slides.length;
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    const sliderContainer = document.querySelector('.work-list');
+    sliderContainer.style.transform = `translateX(-${currentSlide * 20}%)`;
+}
