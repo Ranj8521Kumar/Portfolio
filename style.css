@@ -17,7 +17,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/header-image\ \(3\).png);
+    background-image: url(images/header_background.png);
     background-size: cover;
     background-position: center;
     z-index: -1;
