@@ -348,7 +348,7 @@ nav .small-screen{
 
 @media screen and (max-width: 600px) {
     #header{
-        background-image: url(images/phone-back2.png);
+        background-image: url(images/photo_back.png);
     }
     .header-text p{
         margin-top: 100%;
@@ -424,6 +424,20 @@ nav .small-screen{
     nav .fa-solid{
         font-size: 20px;
     }
+
+    .work .layer p{
+        display: none;
+    }
+
+    .work .layer h3{
+        display: none;
+    }
+
+    .about-col1 img {
+        width: 60%;
+        border-radius: 20%;
+        margin-left: 20%;
+    }
 }
 
 
@@ -450,7 +464,7 @@ nav .small-screen{
 .prev, .next {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(20%);
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
